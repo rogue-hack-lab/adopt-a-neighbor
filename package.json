@@ -1,30 +1,19 @@
 {
-  "name": "adopt-a-neighbor-frontend",
+  "name": "adopt-a-neighbor",
+  "version": "0.1.0",
   "private": true,
-  "scripts": {
-    "start": "react-static start",
-    "stage": "react-static build --staging",
-    "build": "react-static build",
-    "analyze": "react-static build --analyze",
-    "serve": "serve dist -p 3000",
-    "lint": "eslint .",
-    "lint:fix": "eslint --fix .",
-    "format": "prettier --write \"**/*.+(js|jsx|json|css|md)\""
-  },
+  "homepage": ".",
   "dependencies": {
-    "@reach/router": "^1.2.1",
-    "axios": "^0.19.0",
+    "axios": "^0.19.2",
+    "eslint-config-prettier": "^6.10.1",
     "grommet": "^2.12.0",
-    "react": "^16.9.0",
+    "react": "^16.13.1",
     "react-break": "^1.3.2",
-    "react-dom": "^16.9.0",
+    "react-dom": "^16.13.1",
     "react-landing-page": "^2.0.2",
     "react-multistep": "^4.0.1",
     "react-responsive": "^8.0.3",
-    "react-static": "^7.2.0",
-    "react-static-plugin-reach-router": "^7.2.0",
-    "react-static-plugin-sitemap": "^7.2.0",
-    "react-static-plugin-source-filesystem": "^7.2.0",
+    "react-scripts": "3.4.1",
     "react-super-responsive-table": "^5.1.1",
     "reflexbox": "^4.0.6",
     "responsively": "^1.0.21",
@@ -33,9 +22,10 @@
   "devDependencies": {
     "@babel/preset-env": "^7.9.0",
     "@babel/preset-react": "^7.9.4",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
     "babel-eslint": "^10.0.2",
-    "babel-jest": "^25.2.6",
-    "eslint": "^6.8.0",
     "eslint-config-react-app": "^5.0.1",
     "eslint-config-react-tools": "^1.1.7",
     "eslint-plugin-flowtype": "^4.2.0",
@@ -45,15 +35,37 @@
     "eslint-plugin-react": "^7.19.0",
     "eslint-plugin-react-hooks": "^3.0.0",
     "husky": "^4.2.3",
-    "jest": "^25.2.7",
     "lint-staged": "^10.1.2",
     "prettier": "^2.0.4",
-    "react-test-renderer": "^16.13.1",
-    "serve": "^11.1.0"
+    "react-test-renderer": "^16.13.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix .",
+    "format": "prettier --write \"**/*.+(js|jsx|json|yml|yaml|md)\""
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   },
   "lint-staged": {
-    "*.+(js|jsx|json|css|md)": [
-      "eslint --fix .",
+    "*.+(js|jsx)": [
+      "eslint --fix",
       "git add"
     ],
     "*.+(json|css|md)": [

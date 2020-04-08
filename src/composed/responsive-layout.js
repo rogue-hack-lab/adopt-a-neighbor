@@ -14,16 +14,18 @@ const ResponsiveLayout = () => (
       <Box align="center" alignSelf="center" responsive={true} direction="row">
         <Text size="large">
           There are many ways you can help with the fight against Covid-19. The Adopt a
-          Neighbor program focuses on geographical proximity and our most vulnerable
-          populations to bolster existing social webs in the community. By partnering with
-          local organizations and authorities, trusted volunteers can also leverage the
-          ability to curate and broadcast critical information and help coordinate rapid
-          community response to emerging needs.
+          Neighbor program focuses on pairing up neighbors using geographical proximity
+          and local knowledge of the area. By leveraging the intricate social webs already
+          in the community, the program is designed to reach and serve the most vulnerable
+          including our aging population and those with limited access to technology. By
+          working with local authorities , program volunteers can also leverage the
+          ability to curate and broadcast useful information to participants and help
+          coordinate rapid community response to emerging needs.
         </Text>
       </Box>
       <Box align="center" alignSelf="center" responsive={true} direction="row">
         <Text size="large">
-          Why It Works: Geographic Proximity, Partnerships, Safety, Communication.
+          Key Words: Geographic Proximity, Partnerships, Safety, Communication, Trust.
         </Text>
       </Box>
     </Box>
