@@ -1,5 +1,13 @@
 # Adopt a Neighbor
 
+## What
+
+A group of volunteers rapidly developed an Adopt a Neighbor program for the community of Ashland, Oregon in response to Covid-19. The program is having great success. We want to share what we've learned with other communities and abstract the lessons into a solution that can be rapidly expanded to other communities.
+
+[See Ashland Adopt a Neighbor website ](https://adoptneighbors.org)
+
+The "manual" Ashland solution cobbles together free and low cost tools where people submit form data from a Squarespace website to a Google Sheets backend. After that, we cleanup the bad address data (roughly 20% are incomplete or incorrect addresses) and then map that data to match Volunteers with Neighbors that live closest to them. While this approach works, it won't scale very well to larger communities and can't be scaled fast enough. We endevour to build a system where the addresses are prevalidated, matching is more automated and the organizers can focus more on other critical areas like safety, finding other volunteer jobs that can be done from home, organizing mask-making collection and distribution, and responding to whatever emerging needs arise as volunteers get sick and have to drop their match.
+
 ## Notes
 
 - uses create-react-app as a base
