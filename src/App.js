@@ -4,7 +4,7 @@ import FooterBar from './composed/footer-bar';
 
 function App() {
   return (
-    <div className="App">
+    <div>
       <LandingView />
       <FooterBar />
     </div>

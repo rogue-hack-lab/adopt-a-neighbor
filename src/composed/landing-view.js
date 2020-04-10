@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import {
+  Grommet,
   Box,
   Button,
   Collapsible,
   Heading,
-  Grommet,
   Layer,
   ResponsiveContext,
 } from 'grommet';
@@ -39,15 +39,12 @@ class LandingView extends Component {
         <ResponsiveContext.Consumer>
           {(size) => (
             <Box fill>
-              <HeaderBar>
+              <HeaderBar background="brand">
                 <OnAtLeastTablet>
-                  <Heading level="3" margin="none">
-                    <Accessibility /> <Favorite /> <Accessibility />
+                  <Heading size="small" margin="none" level="2">
+                    adoptaneighbor.live
                   </Heading>
                 </OnAtLeastTablet>
-                <Heading size="small" margin="none" level="2">
-                  Adopt a Neighbor
-                </Heading>
                 <Button
                   icon={<Menu />}
                   onClick={() => this.setState({ showSidebar: !this.state.showSidebar })}
@@ -79,6 +76,7 @@ class LandingView extends Component {
                     >
                       <Button
                         icon={<FormClose />}
+                        color="secondaryBrand"
                         onClick={() => this.setState({ showSidebar: false })}
                       />
                     </Box>
