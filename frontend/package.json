@@ -2,7 +2,7 @@
   "name": "adopt-a-neighbor",
   "version": "0.1.0",
   "private": true,
-  "homepage": "./frontend",
+  "homepage": ".",
   "dependencies": {
     "axios": "^0.19.2",
     "eslint-config-prettier": "^6.10.1",
