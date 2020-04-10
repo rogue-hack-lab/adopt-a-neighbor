@@ -14,7 +14,6 @@ import {
 import { Favorite } from 'grommet-icons';
 // import { OnMobile, OnAtLeastTablet, OnDesktop } from '../responsive-ui-utils';
 import theme from '../theme';
-import la from './city-1031706_1920.jpg';
 
 const ResponsiveAppBody = () => (
   <Main align="center">
