@@ -3,7 +3,7 @@ import { Box, Header, Grommet, WorldMap, Text } from 'grommet';
 import { OnMobile, OnAtLeastTablet, OnDesktop } from '../responsive-ui-utils';
 import theme from '../theme';
 
-const ResponsiveLayout = () => (
+const ResponsiveAppBody = () => (
   <Grommet theme={theme}>
     <Box flex align="center" justify="center">
       <Header textAlign="center" size="large">
@@ -47,6 +47,7 @@ const ResponsiveLayout = () => (
       <Box basis="full" direction="row" height="xlarge">
         Displayed on desktop layout only
       </Box>
+      s
     </OnDesktop>
 
     <OnMobile>
@@ -57,4 +58,4 @@ const ResponsiveLayout = () => (
   </Grommet>
 );
 
-export default ResponsiveLayout;
+export default ResponsiveAppBody;

@@ -11,6 +11,7 @@ import {
 import { FormClose, Menu, Notification, Favorite, Accessibility } from 'grommet-icons';
 import theme from '../theme';
 import SidebarMenu from './sidebar-menu';
+import ResponsiveAppBody from './responsive-app-body';
 import { OnMobile, OnAtLeastTablet, OnDesktop } from '../responsive-ui-utils';
 
 const HeaderBar = (props) => (
@@ -27,7 +28,7 @@ const HeaderBar = (props) => (
   />
 );
 
-class Header extends Component {
+class LandingView extends Component {
   state = {
     showSidebar: false,
   };
@@ -53,10 +54,7 @@ class Header extends Component {
                 />
               </HeaderBar>
               <Box direction="row" flex overflow={{ horizontal: 'hidden' }}>
-                <Box flex align="center" justify="center">
-                  What Should Be First? A Hero? Message over semi-transparent background
-                  Image + CTA Button?
-                </Box>
+                <ResponsiveAppBody />
                 {!showSidebar || size !== 'small' ? (
                   <Collapsible direction="horizontal" open={showSidebar}>
                     <Box
@@ -98,4 +96,4 @@ class Header extends Component {
   }
 }
 
-export default Header;
+export default LandingView;

@@ -1,13 +1,11 @@
 import React from 'react';
-import Header from './composed/header';
-import ResponsiveLayout from './composed/responsive-layout';
+import LandingView from './composed/landing-view';
 import FooterBar from './composed/footer-bar';
 
 function App() {
   return (
     <div className="App">
-      <Header />
-      <ResponsiveLayout />
+      <LandingView />
       <FooterBar />
     </div>
   );
