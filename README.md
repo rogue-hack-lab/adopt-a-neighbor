@@ -9,7 +9,9 @@ A group of volunteers rapidly developed an Adopt a Neighbor program for the comm
 
 [See Adopt a Neighbor Ashland website ](https://adoptneighbors.org)
 
-The "manual" Ashland solution cobbles together free and low cost tools where people submit form data from a Squarespace website to a Google Sheets backend. After that, we cleanup the bad address data manually (roughly 20% are incomplete or invalid street addresses) and then map participants to match Volunteers with the Neighbors that live closest to them. While this approach works, it won't scale very well to larger communities and can't be scaled fast enough. We endeavor to build a system where the addresses are pre-validated, matching is more automated and the organizers can focus more on other critical areas like safety, finding other volunteer jobs that can be done from home, organizing mask-making collection and distribution, and responding to whatever emerging needs arise as volunteers get sick and have to drop their match.
+The "backend" for Ashland is largely a cobbling together of free and low cost tools where people submit form data from a Squarespace website to Google Sheets. After that, we cleanup the bad address data manually (roughly 20% are incomplete or invalid street addresses) and then map participants to match Volunteers with the Neighbors that live closest to them. While this approach works, it won't scale very well to larger communities and can't be scaled fast enough.
+
+We endeavor to build a system where the addresses are pre-validated, the matching process is more automated and the organizers can focus more on other critical work. Organizers can focus on participant safety, finding quarantine-friendly volunteer jobs for those that can't go out, organizing mask-making collection and distribution, and responding to whatever emerging needs arise. Volunteers will get sick and their neighbor will need help being rematched with someone else.
 
 ## Call for Contributors and Sponsors
 
