@@ -2,6 +2,10 @@
 
 ## License
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+To the maximum extend permitted by law, this software project is open source and available for both commercial and non-commercial use. Click on the link above to see specific licensing terms. Downstream improvements are welcome and encouraged. We hope to see pull requests when and where it makes sense. You may make modifications to the software components and re-package as a part of another project. However, you must include the same license on the components and derivatives of components originating from this project.
+
+## Call for Contributors and Sponsors
+See the [project wiki](https://github.com/rogue-hack-lab/adopt-a-neighbor/wiki) to learn more about the project and how you can get involved.
 
 ## Background
 A group of volunteers rapidly developed an Adopt a Neighbor program for the community of Ashland, Oregon in response to the Covid-19 epidemic. The program is having great success. We want to share what we've learned and abstract the lessons into a solution that can be rapidly expanded to other communities.
@@ -34,10 +38,6 @@ The project is being developed and led by individual volunteers and cannot provi
 
 Also, if you are deploying this system for your community, consider the importance of following best practices around security of your system.  Examples include end-to-end encryption, the storage and rotation of secrets, and the ability to respond to attacks in real time with tools like Cloudflare and a Web Application Firewalls.
 
-## Call for Contributors and Sponsors
-See the [project wiki](https://github.com/rogue-hack-lab/adopt-a-neighbor/wiki) to learn more about the project and how you can get involved.
-
-Downstream improvements are welcome and encouraged. We hope to see pull requests when and where it makes sense. You may make modifications to the software components and re-package as a part of another project. However, you must include the same license on the components and derivatives of components originating from this project.
 
 ## Contributors
 Add your username as a contributor by submitting a PR.
