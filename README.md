@@ -1,8 +1,10 @@
 # adopt-a-neighbor
 
 ## License
-[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
-To the maximum extend permitted by law, this software project is open source and available for both commercial and non-commercial use. Click on the link above to see specific licensing terms. Downstream improvements are welcome and encouraged. We hope to see pull requests when and where it makes sense. You may make modifications to the software components and re-package as a part of another project. However, you must include the same license on the components and derivatives of components originating from this project.
+
+This project is available under the terms of the following license: [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+
+To the maximum extend permitted by law, this software project is open source and available for both commercial and non-commercial use. Click on the GPL v3 icon above or see license in LICENSE file. Downstream improvements are welcome and encouraged. We hope to see pull requests when and where it makes sense. You may make modifications to the software components and re-package as a part of another project. However, you must include the same license on the components and derivatives of components originating from this project.
 
 ## Call for Contributors and Sponsors
 See the [project wiki](https://github.com/rogue-hack-lab/adopt-a-neighbor/wiki) to learn more about the project and how you can get involved.
