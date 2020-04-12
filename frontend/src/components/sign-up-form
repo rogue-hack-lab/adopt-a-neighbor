@@ -1,0 +1,12 @@
+import React, { useContext } from 'react';
+import { store } from '../store.js';
+
+const SignUpForm = () => {
+  const globalState = useContext(store);
+  console.log('GlobalState', GlobalState);
+  const { dispatch } = globalState;
+
+  dispatch({ type: 'action description' })
+};
+
+export default SignUpForm;
