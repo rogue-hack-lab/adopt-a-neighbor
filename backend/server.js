@@ -1,10 +1,16 @@
 "use strict";
 
 const Hapi = require("hapi");
+require('dotenv').config()
 
 const server = Hapi.server({
-  port: 3000,
-  host: "0.0.0.0" // needed for Render deployment
+  port: process.env.PORT || 4000,
+  host: process.env.HOST || "0.0.0.0", // needed for Render deployment
+  routes: {
+    cors: {
+        origin: [process.env.CORS_ORIGIN_WHITELIST], // an array of origins or 'ignore'
+    }
+  }
 });
 
 server.route({
