@@ -1,27 +1,23 @@
 # Adopt a Neighbor
 
-## What
+## Background
 
-A group of volunteers rapidly developed an Adopt a Neighbor program for the community of Ashland, Oregon in response to Covid-19. The program is having great success. We want to share what we've learned with other communities and abstract the lessons into a solution that can be rapidly expanded to other communities.
+A group of volunteers rapidly developed an Adopt a Neighbor program for the community of Ashland, Oregon in response to the Covid-19 epidemic. The program is having great success. We want to share what we've learned with other communities and abstract the lessons into a solution that can be rapidly expanded to other communities.
 
-[See Ashland Adopt a Neighbor website ](https://adoptneighbors.org)
+[See Adopt a Neighbor Ashland website ](https://adoptneighbors.org)
 
-The "manual" Ashland solution cobbles together free and low cost tools where people submit form data from a Squarespace website to a Google Sheets backend. After that, we cleanup the bad address data (roughly 20% are incomplete or incorrect addresses) and then map that data to match Volunteers with Neighbors that live closest to them. While this approach works, it won't scale very well to larger communities and can't be scaled fast enough. We endevour to build a system where the addresses are prevalidated, matching is more automated and the organizers can focus more on other critical areas like safety, finding other volunteer jobs that can be done from home, organizing mask-making collection and distribution, and responding to whatever emerging needs arise as volunteers get sick and have to drop their match.
+The "manual" Ashland solution cobbles together free and low cost tools where people submit form data from a Squarespace website to a Google Sheets backend. After that, we cleanup the bad address data manually (roughly 20% are incomplete or invalid street addresses) and then map participants to match Volunteers with the Neighbors that live closest to them. While this approach works, it won't scale very well to larger communities and can't be scaled fast enough. We endeavor to build a system where the addresses are pre-validated, matching is more automated and the organizers can focus more on other critical areas like safety, finding other volunteer jobs that can be done from home, organizing mask-making collection and distribution, and responding to whatever emerging needs arise as volunteers get sick and have to drop their match.
 
-## Notes
+## Call for Contributors and Sponsors
 
-- uses create-react-app as a base
-- incorporates a number of libraries aimed at developing UI for both mobile phone browsers and desktop, including react-multistep to keep the number of fields on each screen to a minimum
-- now includes examples of how to use react-break library to render conditionally based on breakpoints. See the responsive-ui-utils.js file.
-- added a pre-commit hook that will perform automatic code linting and prettier code formatting
-- create a new branch from develop branch (git checkout -b feature/name-of-new-thing)
-- push that branch up to the remote, and keep making small atomic commits with helpful messages
-- regularly `git pull develop` to keep your local up-to-date
-- make sure to rebase the latest changes on develop into your branch, `git rebase develop` from your branch
-- push changes to the remote branch
-- open up a PR to develop branch from your branch, and tag the other developers for a code review
-- once another developer has approved the PR, you are free to merge it into develop when you are ready
+See the [project wiki](https://github.com/rogue-hack-lab/adopt-a-neighbor/wiki) to learn more about the project and how you can get involved.
 
-## Unit Tests
+## License
+This software project is open source under the terms defined in the [LGPL v3]() and downstream improvements are encouraged. We hope to see your pull requests upstream when it makes sense. You may make modifications the software components and re-package as a part of another project. However, you must include the same LGPL v3 license on the components originating from this project.  Any 3rd party library we are using in this project maintain their own licenses, and as a consequence you are responsible for carrying forward the license terms.
 
-create-react-app uses Jest under the hood. [See docs ](https://create-react-app.dev/docs/running-tests/)
+## Disclaimer
+The project is currently developed and led by individual volunteers and cannot provide a warranty, either expressly or implied. While we will make our best efforts to develop high quality components in this project, the consumer of this software has the burden of examining our components to determine if and how it meets any standards required. All of the code and third party libraries incorporated into this project are open to scrutiny and available for inspection. If you find vulnerabilities in the codebase or a third party library that does not fit within the terms of our license, please submit a PR with the fix or report the issue to adopt.a.neighbor.global@gmail.com
+
+## Contributors
+Add your username as a contributor by submitting a PR.
+* @soupala
