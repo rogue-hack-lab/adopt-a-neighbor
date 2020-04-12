@@ -1,8 +1,11 @@
-# Adopt a Neighbor
+# adopt-a-neighbor
+
+## License
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
 ## Background
 
-A group of volunteers rapidly developed an Adopt a Neighbor program for the community of Ashland, Oregon in response to the Covid-19 epidemic. The program is having great success. We want to share what we've learned with other communities and abstract the lessons into a solution that can be rapidly expanded to other communities.
+A group of volunteers rapidly developed an Adopt a Neighbor program for the community of Ashland, Oregon in response to the Covid-19 epidemic. The program is having great success. We want to share what we've learned with and abstract the lessons into a solution that can be rapidly expanded to other communities.
 
 [See Adopt a Neighbor Ashland website ](https://adoptneighbors.org)
 
@@ -12,8 +15,7 @@ The "manual" Ashland solution cobbles together free and low cost tools where peo
 
 See the [project wiki](https://github.com/rogue-hack-lab/adopt-a-neighbor/wiki) to learn more about the project and how you can get involved.
 
-## License
-This software project is open source under the terms defined in the [LGPL v3]() and downstream improvements are encouraged. We hope to see your pull requests upstream when it makes sense. You may make modifications the software components and re-package as a part of another project. However, you must include the same LGPL v3 license on the components originating from this project.  Any 3rd party library we are using in this project maintain their own licenses, and as a consequence you are responsible for carrying forward the license terms.
+Downstream improvements are welcome and encouraged. We hope to see pull requests when and where it makes sense. You may make modifications to the software components and re-package as a part of another project. However, you must include the same license on the components and derivatives of components originating from this project.
 
 ## Disclaimer
 The project is currently developed and led by individual volunteers and cannot provide a warranty, either expressly or implied. While we will make our best efforts to develop high quality components in this project, the consumer of this software has the burden of examining our components to determine if and how it meets any standards required. All of the code and third party libraries incorporated into this project are open to scrutiny and available for inspection. If you find vulnerabilities in the codebase or a third party library that does not fit within the terms of our license, please submit a PR with the fix or report the issue to adopt.a.neighbor.global@gmail.com
