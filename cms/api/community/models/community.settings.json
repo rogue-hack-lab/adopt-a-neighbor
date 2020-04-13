@@ -1,0 +1,64 @@
+{
+  "kind": "collectionType",
+  "connection": "default",
+  "collectionName": "communities",
+  "info": {
+    "name": "community"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "communityName": {
+      "type": "string",
+      "required": true,
+      "unique": true,
+      "maxLength": 64,
+      "minLength": 1,
+      "default": "Demo-town Oregon"
+    },
+    "googleSheetBackend": {
+      "type": "boolean",
+      "default": true,
+      "unique": false,
+      "required": true
+    },
+    "volunteersGoogleSheetUrl": {
+      "type": "string",
+      "maxLength": 128,
+      "minLength": 32,
+      "default": "https://docs.google.com/spreadsheets/d/18m0dDdr7bz-V1O9e_JmTdYKK4nVyFdx4lT1E3FZrMHs"
+    },
+    "volunteersSheetTabName": {
+      "type": "string",
+      "maxLength": 32,
+      "minLength": 1,
+      "default": "volunteers"
+    },
+    "neighborsGoogleSheetUrl": {
+      "type": "string",
+      "maxLength": 128,
+      "minLength": 32,
+      "default": "https://docs.google.com/spreadsheets/d/18m0dDdr7bz-V1O9e_JmTdYKK4nVyFdx4lT1E3FZrMHs"
+    },
+    "neighborsSheetTabName": {
+      "type": "string",
+      "default": "neighbors",
+      "maxLength": 32,
+      "minLength": 1
+    },
+    "checkinsGoogleSheetUrl": {
+      "type": "string",
+      "maxLength": 128,
+      "minLength": 32,
+      "default": "https://docs.google.com/spreadsheets/d/18m0dDdr7bz-V1O9e_JmTdYKK4nVyFdx4lT1E3FZrMHs"
+    },
+    "checkinsSheetTabName": {
+      "type": "string",
+      "maxLength": 32,
+      "minLength": 1,
+      "default": "Checkins"
+    }
+  }
+}
