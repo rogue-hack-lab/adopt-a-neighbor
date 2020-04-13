@@ -12,7 +12,7 @@ See the [project wiki](https://github.com/rogue-hack-lab/adopt-a-neighbor/wiki) 
 ## Background
 A group of volunteers rapidly developed an Adopt a Neighbor program for the community of Ashland, Oregon in response to the Covid-19 epidemic. The program is having great success. We want to share what we've learned and abstract the lessons into a solution that can be rapidly expanded to other communities.
 
-[See Adopt a Neighbor Ashland website ](https://adoptneighbors.org)
+[See Adopt a Neighbor Ashland website ](https://adoptneighbor.org)
 
 The "backend" for Ashland is largely a cobbling together of free and low cost tools where people submit form data from a Squarespace website to private Google Sheets. After that, we cleanup the bad address data manually (roughly 20% are incomplete or invalid street addresses) and then map participants to match Volunteers with the nearest Neighbors. While this manual approach works, it won't scale very well to larger communities and can't be scaled fast enough.
 
