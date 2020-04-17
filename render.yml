@@ -1,0 +1,80 @@
+# A static site deployment for the production site
+- type: web
+  name: adopt-a-neighbor-frontend-develop
+  env: static
+  branch: develop # optional (uses repo default)
+  buildCommand: cd frontend; yarn; yarn test; yarn build
+  staticPublishPath: frontend/build
+  pullRequestPreviewsEnabled: true  # optional
+  autoDeploy: true
+  routes:
+  - type: rewrite
+    source: /api
+    destination: DEV_API_HOSTNAME
+  - type: rewrite
+    source: /api/*
+    destination: "{{DEV_API_HOSTNAME}}/*"
+  - type: rewrite
+    source: /cms
+    destination: DEV_CMS_API_HOSTNAME
+  - type: rewrite
+    source: /cms/*
+    destination: "{{DEV_CMS_API_HOSTNAME}}/*"
+  domains: 
+  - DEV_HOSTNAME
+
+# A static site deployment for the develop trunk
+- type: web
+  name: adopt-a-neighbor-frontend-production
+  env: static
+  branch: master # optional (uses repo default)
+  buildCommand: cd frontend; yarn; yarn test; yarn build
+  staticPublishPath: frontend/build
+  autoDeploy: true
+  routes:
+  - type: rewrite
+    source: /api
+    destination: PROD_API_HOSTNAME
+  - type: rewrite
+    source: /api/*
+    destination: "{{PROD_API_HOSTNAME}}/*"
+  - type: rewrite
+    source: /cms
+    destination: PROD_CMS_API_HOSTNAME
+  - type: rewrite
+    source: /cms/*
+    destination: "{{PROD_CMS_API_HOSTNAME}}/*"
+  domains:
+  - PROD_HOSTNAME
+
+services:
+# A Hapi web service for develop
+- type: web
+  name: adopt-a-neighbor-api-develop
+  env: node
+  plan: starter # optional
+  numInstances: 1
+  branch: develop  # optional (uses repo default)
+  healthCheckPath: /
+  buildCommand: cd backend; yarn
+  startCommand: cd backend; yarn start
+  pullRequestPreviewsEnabled: true  # optional
+  autoDeploy: true
+  domains: 
+  - DEV_API_HOSTNAME
+
+services:
+# A Hapi web service for production
+- type: web
+  name: adopt-a-neighbor-api-production
+  env: node
+  plan: starter # optional
+  numInstances: 1
+  branch: master  # optional (uses repo default)
+  healthCheckPath: /
+  buildCommand: cd backend; yarn
+  startCommand: cd backend; yarn start
+  pullRequestPreviewsEnabled: true  # optional
+  autoDeploy: true
+  domains: 
+  - PROD_API_HOSTNAME
