@@ -1,6 +1,29 @@
+envVarGroups:
+- name: prod
+  envVars:
+  - key: API_DOMAIN
+    sync: false
+  - key: APP_DOMAIN
+    sync: false
+  - key: CMS_API_DOMAIN
+    sync: false
+  - key: CMS_DOMAIN
+    sync: false
+
+- name: dev
+  envVars:
+  - key: API_DOMAIN
+    sync: false
+  - key: APP_DOMAIN
+    sync: false
+  - key: CMS_API_DOMAIN
+    sync: false
+  - key: CMS_DOMAIN
+    sync: false
+
 services:
 
-# A static site deployment frontend application
+# A static site deployment frontend application for production
 - type: web
   name: adopt-a-neighbor-frontend-production
   env: static
@@ -9,6 +32,7 @@ services:
   staticPublishPath: frontend/build
   pullRequestPreviewsEnabled: true  # optional
   autoDeploy: true
+  - fromGroup: domains-prod
 
 # A Hapi web service for production
 - type: web
@@ -22,3 +46,29 @@ services:
   startCommand: cd backend; yarn start
   pullRequestPreviewsEnabled: true  # optional
   autoDeploy: true
+- fromGroup: prod
+
+# A static site deployment frontend application for development
+- type: web
+  name: adopt-a-neighbor-frontend-develop
+  env: static
+  branch: develop # optional (uses repo default)
+  buildCommand: cd frontend; yarn; yarn test; yarn build
+  staticPublishPath: frontend/build
+  pullRequestPreviewsEnabled: true  # optional
+  autoDeploy: true
+  - fromGroup: domains-dev
+
+# A Hapi web service for development
+- type: web
+  name: adopt-a-neighbor-api-develop
+  env: node
+  plan: starter # optional
+  numInstances: 1
+  branch: develop  # optional (uses repo default)
+  healthCheckPath: /
+  buildCommand: cd backend; yarn
+  startCommand: cd backend; yarn start
+  pullRequestPreviewsEnabled: true  # optional
+  autoDeploy: true
+- fromGroup: dev
