@@ -7,6 +7,7 @@ services:
   branch: master # optional (uses repo default)
   buildCommand: cd frontend; yarn; yarn test; yarn build
   staticPublishPath: frontend/build
+  pullRequestPreviewsEnabled: true  # optional
   autoDeploy: true
 
 # A Hapi web service for production
