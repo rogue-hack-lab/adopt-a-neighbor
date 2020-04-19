@@ -32,6 +32,7 @@ services:
   staticPublishPath: frontend/build
   pullRequestPreviewsEnabled: true  # optional
   autoDeploy: true
+  envVars:
   - fromGroup: domains-prod
 
 # A Hapi web service for production
@@ -46,7 +47,8 @@ services:
   startCommand: cd backend; yarn start
   pullRequestPreviewsEnabled: true  # optional
   autoDeploy: true
-- fromGroup: prod
+  envVars:
+  - fromGroup: prod
 
 # A static site deployment frontend application for development
 - type: web
@@ -57,6 +59,7 @@ services:
   staticPublishPath: frontend/build
   pullRequestPreviewsEnabled: true  # optional
   autoDeploy: true
+  envVars:
   - fromGroup: domains-dev
 
 # A Hapi web service for development
@@ -71,4 +74,5 @@ services:
   startCommand: cd backend; yarn start
   pullRequestPreviewsEnabled: true  # optional
   autoDeploy: true
-- fromGroup: dev
+  envVars:
+  - fromGroup: dev
