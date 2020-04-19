@@ -33,7 +33,7 @@ services:
   pullRequestPreviewsEnabled: true  # optional
   autoDeploy: true
   envVars:
-  - fromGroup: domains-prod
+  - fromGroup: prod
 
 # A Hapi web service for production
 - type: web
@@ -60,7 +60,7 @@ services:
   pullRequestPreviewsEnabled: true  # optional
   autoDeploy: true
   envVars:
-  - fromGroup: domains-dev
+  - fromGroup: dev
 
 # A Hapi web service for development
 - type: web
