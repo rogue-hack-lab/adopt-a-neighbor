@@ -4,6 +4,7 @@ import {
   FacebookOption,
   Instagram,
   Twitter,
+  Github,
   Favorite,
   Accessibility,
 } from 'grommet-icons';
@@ -14,19 +15,19 @@ import theme from '../theme';
 const Media = () => (
   <Box direction="row" gap="xxsmall" justify="center">
     <Anchor
-      a11yTitle="Share feedback on Github"
-      href="https://www.instagram.com/"
-      icon={<Instagram color="brand" />}
-    />
-    <Anchor
-      a11yTitle="Chat with us on Slack"
-      href="https://www.facebook.com/"
+      a11yTitle="Chat with us on Facebook"
+      href="https://www.facebook.com/Adopt-a-Neighbor-110843700582498"
       icon={<FacebookOption color="brand" />}
     />
     <Anchor
       a11yTitle="Follow us on Twitter"
-      href="https://twitter.com/"
+      href="https://twitter.com/AdoptNeighbor"
       icon={<Twitter color="brand" />}
+    />
+    <Anchor
+      a11yTitle="Share feedback on Github"
+      href="https://github.com/rogue-hack-lab/adopt-a-neighbor"
+      icon={<Github color="brand" />}
     />
   </Box>
 );
@@ -37,7 +38,7 @@ const Social = () => (
       <Box align="center" direction="row" gap="xsmall">
         <GrommetIcon color="brand" size="medium" />
         <Text alignSelf="center" color="brand" size="small">
-          Adopt a Nighbor
+          Adopt a Neighbor
         </Text>
       </Box>
       <Media />
